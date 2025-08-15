@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+MyChatbot.egg-info/PKG-INFO
+MyChatbot.egg-info/SOURCES.txt
+MyChatbot.egg-info/dependency_links.txt
+MyChatbot.egg-info/top_level.txt
