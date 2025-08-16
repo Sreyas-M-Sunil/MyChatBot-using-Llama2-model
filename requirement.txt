@@ -1,9 +1,12 @@
 ctransformers==0.2.5
-sentence-transformers==2.2.2
-pinecone
-langchain==0.0.225
 flask
 pypdf
 sentence_transformers
 python-dotenv
+langchain==0.3.0
+langchain-community==0.3.0
+pinecone>=3.0.0
+sentence-transformers>=2.2.2
+pydantic>=2.7,<3
+protobuf==4.25.3
 -e .

@@ -1,0 +1,127 @@
+/* Page background & centering */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Chat container */
+.chat {
+  width: 400px;
+  height: 600px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Chat header */
+.chat-title {
+  background: #6c63ff;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Messages area */
+.messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f7f8fc;
+}
+
+/* Message bubbles */
+.message {
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 15px;
+  max-width: 70%;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: slideIn 0.3s forwards;
+}
+
+.message-personal {
+  background: #6c63ff;
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 5px;
+}
+
+.message-bot {
+  background: #e0e0e0;
+  color: #333;
+  margin-right: auto;
+  border-bottom-left-radius: 5px;
+}
+
+/* Input area */
+.message-box {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  outline: none;
+  margin-right: 10px;
+}
+
+.message-submit {
+  background: #6c63ff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.message-submit:hover {
+  background: #5a54d1;
+}
+
+/* File upload */
+#user-file {
+  display: none;
+}
+
+.upload-label {
+  background: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}

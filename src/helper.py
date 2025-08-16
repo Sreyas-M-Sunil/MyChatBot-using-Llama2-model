@@ -15,7 +15,7 @@ def split_doc(extracted_data):
     return text_chunks
 
 #Accessing the text_chunks
-def get_text_chunk():
+def get_text_chunk(extracted_data):
     text_chunk = split_doc(extracted_data)
     return text_chunk
 
