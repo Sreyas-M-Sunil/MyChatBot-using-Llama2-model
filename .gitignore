@@ -25,14 +25,18 @@ venv/
 Thumbs.db
 
 # ---- Chatbot Project ----
+data/             # ignore your data folder
 uploads/          # where user PDF files are stored
-*.pdf             # ignore all PDFs (if you don’t want any in git)
+*.pdf             # ignore all PDFs (optional, if you don’t want them in git)
 
 # ---- Dependencies ----
-/*.egg-info/
-/dist/
-/build/
-/*.egg
+*.egg
+*.egg-info/
+dist/
+build/
+
+# ---- Databases ----
+*.sqlite3
+*.db
 
 # ---- Others ----
-*.sqlite3
