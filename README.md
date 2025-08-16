@@ -16,14 +16,13 @@ Users can upload a PDF, and the bot will extract, chunk, and index the content f
 ---
 
 ## Project Structure
-
 MyChatBot-using-Llama2-model/
-│── app.py              # Flask app (main entry)
-│── helper.py           # Helper functions (load PDF, chunk text, etc.)
-│── store_index.py      # Pinecone index handling
-│── chat.html           # Frontend chat UI
-│── style.css           # Styling for frontend
-│── requirements.txt    # Python dependencies
-│── .env                # Environment variables (ignored in git)
-│── .gitignore          # Ignore sensitive/unnecessary files
-│── uploads/            # Folder to store uploaded PDFs
+│── app.py # Flask app (main entry)
+│── helper.py # Helper functions (load PDF, chunk text, etc.)
+│── store_index.py # Pinecone index handling
+│── chat.html # Frontend chat UI
+│── style.css # Styling for frontend
+│── requirements.txt # Python dependencies
+│── .env # Environment variables (ignored in git)
+│── .gitignore # Ignore sensitive/unnecessary files
+│── uploads/ # Folder to store uploaded PDFs
