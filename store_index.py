@@ -22,7 +22,7 @@ embedding = download_huggingface_embedding()
 pc = Pinecone(
         api_key=os.environ.get("PINECONE_API_KEY")
     )
-my_index = 'neww'
+my_index=os.getenv("INDEX_NAME")
     # Now do stuff
 if 'neww' not in pc.list_indexes().names():
     pc.create_index(
