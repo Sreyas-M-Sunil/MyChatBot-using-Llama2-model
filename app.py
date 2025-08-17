@@ -26,7 +26,7 @@ embeddings = download_embedding()
 pc_client = PCClient(api_key=pc_key, environment=pc_env)
 
 
-my_index='neww'
+my_index=os.getenv("INDEX_NAME")
 
 
 prompt = PromptTemplate(template = prompt_template,inpit_variables=['context','question'])
